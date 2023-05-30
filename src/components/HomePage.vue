@@ -15,3 +15,15 @@ let changeName = () => {
   h1 {{ name }}
   button(@click="changeName") {{ "Click Me" }}
 </template>
+
+
+<style lang="scss" scoped>
+#HomePage {
+  h1 {
+    background-color: blue;
+    outline: auto;
+  }
+}
+
+#HomePage {}
+</style>
