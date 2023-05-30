@@ -1,9 +1,17 @@
 <script setup>
+import { ref } from 'vue';
 
+
+
+const name = ref("Johnny")
+
+let changeName = () => {
+  name.value = "Chang"
+}
 </script>
 
-<template>
-  <div>
-    <h1>This is the home page</h1> 
-  </div>
+<template lang="pug">
+#HomePage 
+  h1 {{ name }}
+  button(@click="changeName") {{ "Click Me" }}
 </template>
